@@ -40,15 +40,16 @@ namespace Class2PrepDictionaries
 
 
             // Print roster
-            Console.WriteLine("\n-------------------------\n");
-            Console.WriteLine("\nGreat! Here is your finale roster:\n");
+            finalRoster.Append("\n-------------------------\n");
+            finalRoster.Append("\nGreat! Here is your finale roster:\n");
 
 
             foreach (KeyValuePair<int, string> student in students)
             {
-                Console.WriteLine("NAME: " + student.Value + " || ID: " + student.Key);
+                finalRoster.Append("\nNAME: " + student.Value + " || ID: " + student.Key);
             }
-            Console.WriteLine("\n-------------------------\n");
+            finalRoster.Append("\n-------------------------\n");
+            Console.WriteLine(finalRoster);
 
             // Student look-up
             string searchForStudent = "";
