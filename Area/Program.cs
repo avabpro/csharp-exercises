@@ -30,7 +30,8 @@ namespace Area
             }
             
             double area = AreaMethod(radius);
-            Console.WriteLine($"/nThe area of your circle is {area.ToString()}.");
+            Console.WriteLine("\n");
+            Console.WriteLine($"The area of your circle is {area.ToString()}.");
             Console.ReadLine();
 
         }
